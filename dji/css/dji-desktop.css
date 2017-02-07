@@ -32,7 +32,7 @@
 	height: 35px;
 	top: 20px;
 	display: block;
-	background: url("http://tokopedia.com/img/official_store/ytb-dark.png");
+	background: url("https://ecs7.tokopedia.net/img/official_store/ytb-dark.png");
 	background-size: 100%;
 	opacity: .9;
 	transition: background .25s ease;
@@ -41,7 +41,7 @@
 	width: 50px;
 	height: 35px;
 	display: block;
-	background: url("http://tokopedia.com/img/official_store/ytb-color.png");
+	background: url("https://ecs7.tokopedia.net/img/official_store/ytb-color.png");
 	background-size: 100%;
 	opacity: .9;
 }
