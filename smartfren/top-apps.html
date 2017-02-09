@@ -9,10 +9,24 @@
     	<div class="pl-10 pr-10">
     		<div class="official-shop-bigSlider swiper-container">
                 <div class="swiper-wrapper">
-                	<div class="swiper-slide">
-                        <a href="tokopedia://shop/smartfren/product/109650923">
+                    <div class="swiper-slide">
+                        <a href="tokopedia://shop/smartfren/product/130918266">
                             <picture>
-                            	<img src="https://ecs7.tokopedia.net/img/official_store/smartfren/16_12_2/mobile/Main-Features-Banner_1190-x-600px-01.jpg">
+                                <img src="https://ecs7.tokopedia.net/img/official_store/smartfren/17-02-06/mobile/sliding-1.jpg">
+                            </picture>
+                        </a>
+                    </div>
+                	<div class="swiper-slide">
+                        <a href="tokopedia://shop/smartfren/product/130912229">
+                            <picture>
+                            	<img src="https://ecs7.tokopedia.net/img/official_store/smartfren/17-02-06/mobile/sliding-2.jpg">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="tokopedia://shop/smartfren/product/136140604">
+                            <picture>
+                                <img src="https://ecs7.tokopedia.net/img/official_store/smartfren/17-02-06/mobile/sliding-3.jpg">
                             </picture>
                         </a>
                     </div>
@@ -20,13 +34,6 @@
                         <a href="tokopedia://shop/smartfren/product/109652020">
                             <picture>
                             	<img src="https://ecs7.tokopedia.net/img/official_store/smartfren/16_12_2/mobile/Main-Features-Banner_1190-x-600px-02.jpg">
-                            </picture>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="tokopedia://shop/smartfren/etalase/5367493">
-                            <picture>
-                            	<img src="https://ecs7.tokopedia.net/img/official_store/smartfren/16_12_2/mobile/Main-Features-Banner_1190-x-600px-03.jpg">
                             </picture>
                         </a>
                     </div>
@@ -46,15 +53,15 @@
                 </div>
                 <div class="slide-prev"><i class="icon-chevron-left-alt"></i></div>
                 <div class="slide-next"><i class="icon-chevron-right-alt"></i></div>
-            </div>	    
+            </div>
             <!-- start widget pulsa -->
             <!-- <div class="official-widget-pulsa mt-10">
                 <h3 class="mb-10">Butuh Pulsa Smartfren ? Beli disini sekarang !</h3>
 
                 <div id="widget-dmw" data-utm-source="mobile" data-utm-medium="widget" data-utm-campaign="official_store_smartfren" style="margin:10px auto 20px"></div>
-                
+
             </div> -->
-            <!-- end widget pulsa -->       
+            <!-- end widget pulsa -->
         </div>
         <div class="section-official-shop-promo__type3 official-carousel swiper-container">
         	<div class="swiper-wrapper">
@@ -97,7 +104,7 @@
     var recharge_banner_small = 'https://ecs7.tokopedia.net/img/official_store/smartfren/16_12_6/ui-banner-isi-pulsa-200x120.jpg';
     var recharge_force_operator = 7;
     var recharge_cdn_version = 3;
- 
+
     $(function(){
         if(document.createStyleSheet) {
             document.createStyleSheet('https://ecs7.tokopedia.net/css/recharge-widget-mobile.css?v=' + recharge_cdn_version);
@@ -109,7 +116,7 @@
             newSS.href='data:text/css,'+escape(styles);
             document.getElementsByTagName("head")[0].appendChild(newSS);
         }
-      
+
         $.getScript('https://ecs7.tokopedia.net/scripts/recharge-widget-mobile.js?v=' + recharge_cdn_version).done(function(script,status) {
             var pulsa_banner = $("#dmw-img--big").parent("a");
             var input_number = $("#recharge_client_number");
@@ -124,7 +131,7 @@
                 },1000);
             }
         });
-     
+
     });
 </script>
 </body>
