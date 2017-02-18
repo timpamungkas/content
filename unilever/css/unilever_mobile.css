@@ -1,0 +1,99 @@
+.category-wrapper {
+	background-color: #FFF;
+	border-top: 1px solid #E0E0E0;
+	border-bottom: 1px solid #E0E0E0;
+	margin-top: 20px;
+	box-sizing: border-box;
+}
+.category-tabs .category-tab-link {
+	background: none;
+	display: table-cell;
+	padding: 10px 15px;
+	cursor: pointer;
+	width: 25%;
+	text-align: center;
+	box-sizing: border-box;
+	position: relative;
+	vertical-align: middle;
+}
+.category-tab-link.current {
+	color: #FFF;
+}
+.category-tab-content {
+	display: none;
+}
+.category-tab-content.current {
+	display: inherit;
+}
+.tabbing-beauty {
+	border-bottom: 5px solid #e56db1;
+}
+.tabbing-baby {
+	border-bottom: 5px solid #ffc72c;
+}
+.tabbing-home {
+	border-bottom: 5px solid #84bd00;
+}
+.tabbing-food {
+	border-bottom: 5px solid #00573f;
+}
+.tabbing-beauty.current {
+	background-color: #e56db1;
+}
+.tabbing-baby.current {
+	background-color: #ffc72c;
+}
+.tabbing-home.current {
+	background-color: #84bd00;
+}
+.tabbing-food.current {
+	background-color: #00573f;
+}
+.brand-list-box {
+	display: table-cell;
+	padding: 20px 10px;
+	width: 33.33%;
+	box-sizing: border-box;
+	text-align: center;
+	height: 106px;
+	vertical-align: middle;
+}
+.brand-list-box:nth-child(2) {
+	border-right: 1px solid #E0E0E0;
+	border-left: 1px solid #E0E0E0;
+}
+.brand-list-box img {
+	width: 100px;
+	transition: all .3s ease;
+}
+.branding-banner {
+	width: 49%;
+}
+#other-brands {
+	cursor: pointer;
+	font-size: 14px;
+	color: #42b549;
+}
+.border-top-e0 {
+	border-top: 1px solid #E0E0E0;
+}
+.border-btm-e0 {
+	border-bottom: 1px solid #E0E0E0;
+}
+.border-right-e0 {
+	border-right: 1px solid #E0E0E0;
+}
+.border-right-none {
+	border-right: none !important;
+}
+.icon-more-brands {
+	width: 38px;
+	height: 10px;
+	display: block;
+	background: url(https://ecs7.tokopedia.net/img/official_store/unilever/other-brands.png) no-repeat;
+	background-size: 38px;
+	margin: 0 auto 5px;
+}
+.display-table {
+	display: table;
+}
