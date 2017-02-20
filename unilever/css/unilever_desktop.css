@@ -1,0 +1,140 @@
+.category-wrapper {
+    background-color: #FFF;
+    border: 1px solid #E0E0E0;
+}
+.category-tabs {
+    height: 50px;
+}
+.category-tabs .category-tab-link {
+    background: none;
+    display: inline-block;
+    padding: 10px 15px;
+    cursor: pointer;
+    width: 25%;
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+    height: 50px;
+    float: left;
+}
+.category-tab-link.current {
+    color: #FFF;
+}
+.category-tab-content {
+    display: none;
+}
+.category-tab-content.current {
+    display: inherit;
+}
+.tab-title {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 13px;
+    box-sizing: border-box;
+    font-weight: 600;
+}
+.active-line {
+    position: absolute;
+    height: 5px;
+    transition: height .25s ease;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+.tabbing-beauty .active-line, .tabbing-beauty.current {
+    background-color: #e56db1;
+}
+.tabbing-baby .active-line, .tabbing-baby.current {
+    background-color: #ffc72c;
+}
+.tabbing-home .active-line, .tabbing-home.current {
+    background-color: #84bd00;
+}
+.tabbing-food .active-line, .tabbing-food.current {
+    background-color: #00573f;
+}
+.category-tab-link:hover .active-line {
+    height: 100%;
+}
+.category-tab-link:hover .tab-title {
+    color: #FFF;
+    font-weight: 600;
+}
+.brand-list-box {
+    display: table-cell;
+    padding: 10px;
+    width: 33.33%;
+    box-sizing: border-box;
+    text-align: center;
+    height: 106px;
+    vertical-align: middle;
+}
+.brand-list-box:nth-child(2) {
+    border-right: 1px solid #E0E0E0;
+    border-left: 1px solid #E0E0E0;
+}
+.brand-list-box img {
+    width: 100px;
+    transition: all .3s ease;
+}
+.branding-banner {
+    width: 49%;
+}
+.brands-logo {
+    width: 51%;
+}
+#other-brands {
+    color: #42b549;
+    cursor: pointer;
+}
+.border-top-e0 {
+    border-top: 1px solid #E0E0E0;
+}
+.border-btm-e0 {
+    border-bottom: 1px solid #E0E0E0;
+}
+.border-right-e0 {
+    border-right: 1px solid #E0E0E0;
+}
+.border-left-e0 {
+    border-left: 1px solid #E0E0E0;
+}
+.border-right-none {
+    border-right: none !important;
+}
+.brand-list-page1, .brand-list-page2 {
+    opacity: 1;
+    transition: all .25s ease;
+}
+.brand-list-page1.hide, .brand-list-page2.hide {
+    opacity: 0;
+    transition: all .25s ease;
+}
+.official-shop-promo__banner-half a:hover {
+    opacity: .7;
+    transition: opacity .3s ease-in-out;
+}
+.icon-more-brands {
+    width: 36px;
+    height: 10px;
+    display: block;
+    background: url(https://ecs7.tokopedia.net/img/official_store/unilever/other-brands.png) no-repeat;
+    background-size: 36px;
+    margin: 0 auto 5px;
+}
+.brand-list-box:hover img {
+    transform: scale(1.3, 1.3);
+}
+@media screen and (min-width: 1200px) {
+    .brand-list-box {
+        height: 132px;
+    }
+    .brand-list-box img {
+        width: 130px;
+        transition: all .3s ease;
+    }
+}
