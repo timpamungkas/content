@@ -1,0 +1,54 @@
+a {
+	outline: none;
+}
+.promo-banner-col3 {
+	float: left;
+	margin-right: 15px;
+	width: 310px;
+}
+.promo-banner-col3:last-child {
+	margin-right: 0;
+}
+.promo-banner-col3 img {
+	width: 100%;
+}
+.philips-promo-small .span6 {
+	width: 147px;
+}
+.small-brand-logo {
+	margin: 0 15px 0 0;
+	width: 180px;
+	padding: 20px 0;
+	text-align: center;
+	background-color: #FFF;
+	position: relative;
+}
+.small-brand-logo:last-child {
+	margin-right: 0;
+}
+.dark-hover {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: rgba(0, 0, 0, .1);
+	top: 0;
+	opacity: 0;
+	transition: all .25s ease;
+}
+.hovered:hover .dark-hover, .small-brand-logo:hover .dark-hover {
+	opacity: 1;
+}
+@media screen and (min-width: 1200px) {
+	.philips-promo-small .span6 img {
+		max-width: 100%;
+	}
+	.small-brand-logo {
+		width: 226px;
+	}
+	.promo-banner-col3 {
+		width: 386px;
+	}
+	.philips-promo-small .span6 {
+		width: 185px;
+	}
+}
