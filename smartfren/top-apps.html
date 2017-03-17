@@ -91,28 +91,28 @@
 </style>
 <script src="https://s3-ap-southeast-1.amazonaws.com/static-ssi-content/brand-store/ramayana/_apps/top-content-minify.js" type="text/javascript"></script>
 <script type="text/javascript">
-    var recharge_url = 'https://pulsa-staging.tokopedia.com/';
-    var recharge_api_url = 'https://pulsa-api-staging.tokopedia.com/';
-    var tiket_url = 'https://tiket-staging.tokopedia.com/';
+    var recharge_url = 'https://pulsa.tokopedia.com/';
+    var recharge_api_url = 'https://pulsa-api.tokopedia.com/';
+    var tiket_url = 'https://tiket.tokopedia.com/';
     var user_id = 0;
     var recharge_banner_big = 'https://ecs7.tokopedia.net/img/official_store/smartfren/16_12_6/ui-banner-isi-pulsa360x120.jpg';
     var recharge_banner_small = 'https://ecs7.tokopedia.net/img/official_store/smartfren/16_12_6/ui-banner-isi-pulsa-200x120.jpg';
     var recharge_force_operator = 7;
     var recharge_cdn_version = 3;
-
+ 
     $(function(){
         if(document.createStyleSheet) {
-            document.createStyleSheet(recharge_url + 'gtm/recharge-widget-mobile.css?v=' + recharge_cdn_version);
+            document.createStyleSheet('https://ecs7.tokopedia.net/css/recharge-widget-mobile.css?v=' + recharge_cdn_version);
         }
         else {
-            var styles = "@import url('"+recharge_url + 'gtm/recharge-widget-mobile.css?v='+recharge_cdn_version + "');";
+            var styles = "@import url('https://ecs7.tokopedia.net/css/recharge-widget-mobile.css?v=" + recharge_cdn_version + "');";
             var newSS=document.createElement('link');
             newSS.rel='stylesheet';
             newSS.href='data:text/css,'+escape(styles);
             document.getElementsByTagName("head")[0].appendChild(newSS);
         }
-
-        $.getScript(recharge_url + 'gtm/recharge-widget-mobile.js?v=' + recharge_cdn_version).done(function(script,status) {
+      
+        $.getScript('https://ecs7.tokopedia.net/scripts/recharge-widget-mobile.js?v=' + recharge_cdn_version).done(function(script,status) {
             var pulsa_banner = $("#dmw-img--big").parent("a");
             var input_number = $("#recharge_client_number");
             var placeholder = "Contoh 0888547324";
@@ -126,7 +126,7 @@
                 },1000);
             }
         });
-
+     
     });
 </script>
 </body>
