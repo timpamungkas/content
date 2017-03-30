@@ -1,0 +1,43 @@
+.official-banner {
+    box-sizing: border-box;
+}
+
+.official-banner__link {
+  opacity: 1;
+  -webkit-transition: opacity 250ms ease-in-out;
+  transition: opacity 250ms ease-in-out;
+}
+
+.official-banner__link img {
+    border-radius: 3px;
+}
+
+.official-banner__link:hover {
+    opacity: 0.7;
+    -webkit-transition: opacity 250ms ease-in-out;
+    transition: opacity 250ms ease-in-out;
+}
+
+.shop-banner-tracker-slider {
+    border-radius: 3px;
+}
+
+.official-shop-brands__makarizo .small-brand-logo {
+    width: 31%;
+    max-width: 100%;
+    text-align: center;
+    margin: 0;
+}
+
+.official-shop-brands__makarizo .small-brand-logo {
+    margin: 0 10px;
+}
+
+.official-shop-brands__makarizo {
+    padding: 10px;
+}
+
+.official-shop-brands__makarizo img {
+    width: auto;
+    height: 110px;
+}
