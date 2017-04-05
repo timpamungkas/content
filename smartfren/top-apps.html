@@ -48,14 +48,14 @@
                 <div class="slide-next"><i class="icon-chevron-right-alt"></i></div>
             </div>
             <!-- start widget pulsa -->
-            <!--
+            
              <div class="official-widget-pulsa mt-10">
                 <h3 class="mb-10">Butuh Pulsa Smartfren ? Beli disini sekarang !</h3>
 
                 <div id="widget-dmw" data-utm-source="mobile" data-utm-medium="widget" data-utm-campaign="official_store_smartfren" style="margin:10px auto 20px"></div>
 
             </div> 
-            -->
+            
             <!-- end widget pulsa -->
         </div>
         <div class="section-official-shop-promo__type3 official-carousel swiper-container">
@@ -90,6 +90,7 @@
 }
 </style>
 <script src="https://s3-ap-southeast-1.amazonaws.com/static-ssi-content/brand-store/ramayana/_apps/top-content-minify.js" type="text/javascript"></script>
+<script src="https://s3-ap-southeast-1.amazonaws.com/static-ssi-content/brand-store/scripts/base.js" type="text/javascript"></script>
 <script type="text/javascript">
     var recharge_url = 'https://pulsa.tokopedia.com/';
     var recharge_api_url = 'https://pulsa-api.tokopedia.com/';
@@ -102,17 +103,17 @@
  
     $(function(){
         if(document.createStyleSheet) {
-            document.createStyleSheet('https://ecs7.tokopedia.net/css/recharge-widget-mobile.css?v=' + recharge_cdn_version);
+            document.createStyleSheet(recharge_url + 'gtm/recharge-widget-mobile.css?v=' + recharge_cdn_version);
         }
         else {
-            var styles = "@import url('https://ecs7.tokopedia.net/css/recharge-widget-mobile.css?v=" + recharge_cdn_version + "');";
+            var styles = "@import url('"+recharge_url + 'gtm/recharge-widget-mobile.css?v='+recharge_cdn_version + "');";
             var newSS=document.createElement('link');
             newSS.rel='stylesheet';
             newSS.href='data:text/css,'+escape(styles);
             document.getElementsByTagName("head")[0].appendChild(newSS);
         }
       
-        $.getScript('https://ecs7.tokopedia.net/scripts/recharge-widget-mobile.js?v=' + recharge_cdn_version).done(function(script,status) {
+        $.getScript(recharge_url + 'gtm/recharge-widget-mobile.js?v=' + recharge_cdn_version).done(function(script,status) {
             var pulsa_banner = $("#dmw-img--big").parent("a");
             var input_number = $("#recharge_client_number");
             var placeholder = "Contoh 0888547324";
