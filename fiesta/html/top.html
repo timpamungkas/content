@@ -63,8 +63,16 @@
                     </a>
                 </div>
                 <div class="span6 official-shop-promo__type2">
-                    <a class="js-top-content-tracker shop-button-tracker" href="https://www.youtube.com/watch?v=Q6YaovWN27Y" data-name="" target="_blank"><img src="https://ecs7.tokopedia.net/img/official_store/fiesta/video-banner.jpg">
+                   <!--  <a class="js-top-content-tracker shop-button-tracker" href="https://www.youtube.com/watch?v=Q6YaovWN27Y" data-name="" target="_blank"><img src="https://ecs7.tokopedia.net/img/official_store/fiesta/video-banner.jpg">
+                    </a> -->
+                    <div class="official-promo-top-video relative">
+                    <a class="official-top-video shop-video-tracker cboxElement" data-name="Fiesta" data-video-colorbox="https://www.youtube.com/embed/Q6YaovWN27Y?&amp;rel=0;autoplay=1" data-video-title="TVC Fiesta Neon" data-video-id="https://www.youtube.com/embed/Q6YaovWN27Y">
+                      <img src="https://ecs7.tokopedia.net/img/official_store/fiesta/video-banner.jpg">
+                      <div class="video-btn video-btn--small">
+                        <i class="video-btn-play video-btn-play--small"></i>
+                      </div>
                     </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -82,4 +90,29 @@
 .official-shop-promo__type1 img {
     border-radius: 3px;
 }
+
+.official-promo-top-video, .official-promo-top-video iframe {
+       width: 230px;
+       height: 125px;
+       /*height: 230px;*/
+    }
+    @media screen and (min-width: 1200px){
+        .official-promo-top-video, .official-promo-top-video iframe {
+           width: 279px;
+           height: 210px;
+           /*height: 278px;*/
+        }
+    }
+
+    .video-btn--small {
+        top: 40%;
+        left: 40%;
+    }
+
+    .video-btn-play--small {
+        width: 50px;
+        height: 35px;
+        top: 20px;
+        display: block;
+    }
 </style>
