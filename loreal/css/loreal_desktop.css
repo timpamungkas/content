@@ -16,6 +16,10 @@
 .category-four-type1__img:last-child {
     margin-right: 0;
 }
+.category-four-type1__img a {
+    display: inline-block;
+    height: 100%;
+}
 .category-four-type1__img:hover .mb-category-four-overlay {
     -webkit-transform: translateY(0);
             transform: translateY(0);
